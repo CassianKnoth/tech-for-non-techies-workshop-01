@@ -1,5 +1,7 @@
 # tech for non-techies workshop 01
 
+<img src="https://us1.discourse-cdn.com/spiceworks/optimized/4X/6/d/d/6dd8eb23c86dff348865e583498635f8f043003f_2_690x476.jpeg" >
+
 Themen
 
 - Pull Request (PR)
