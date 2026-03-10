@@ -40,17 +40,37 @@ Ideen
 
 Ablauf
 
-- Generell: Alles in einem Repo auf Github mit simpler HTML-Seite, per Netlify(?) deployed
-- HTML/CSS/JavaScript
-  - simple Seite
+- Generell: Alles in diesem Repo auf Github mit simpler HTML-Seite, per Netlify deployed + Sanity.io CMS
+
+- Konzept/Story
+  - Die Teilnehmenden sind neu auf dem Projekt und werden eingearbeitet
+  - Kunde ist KoalaCom
+  - KoalaCom möchte die Homepage umgesetzt haben
+  - Dazu gehören Inhalte, Design und ganz wichtig: Blogartikel
+  - Ein Repo existiert bereits
+  - Zunächst sollen die Teilnehmenden die zu verwendenden/verfügbaren Technologien verstehen
+  - Dann sollen sie sie anwenden
+  - Erstmal wird das existierende Design bzw. der existierende Content gehardcoded
+  - Die Zusammenarbeit per Git(hub) wird geschult
+  - Dann gibt es Optimierungen mit JavaScript und mit der Anbindung eines CMS
+
+- HTML
+  - simple Koala Seite
   - Theorie
   - Hands-on
-    - simple index.html Seite
-      - Erstmal ohne CSS durchgehen, erklären, ausprobieren
-    - vordefinierte style.css einbinden
-      - Erklärung, Ausprobieren (vordefinierte Klassen vorhanden)
-    - JavaScript
-      - simples Thema: z. B. ein Button, der per onclick die Farbe eines anderen Elements ändert. Oder etwas mit Mathe, um simpel Variablen und soetwas anzureißen?
+    - Name that Element (in Figjam)
+      - Wir zeigen Bild der Seite, die Teilnehmenden sollen mit farblichen Post-its verschiedene (teils wiederkehrende) Elemente markieren
+      - Sie können die Elemente selbst sinnvoll benennen
+      - Wir geben die tatsächlichen Tag-Names zur Überarbeitung
+    - Teile der Seite gemäß Design und Content bauen
+      - CSS-Klassen stehen bereitet
+- JavaScript
+  - simples Thema: z. B. ein Button, der per onclick die Farbe eines anderen Elements ändert. Oder etwas mit Mathe, um simpel Variablen und soetwas anzureißen?
+  - Der ganze Code existiert bereits, er wird nur eingebunden/einkommentiert und erklärt
+
+- Blog
+  - es gibt eine post.html Seite, die einen URL-Parameter für den Blog-Artikel Index besitzt
+
 - Git
   - Theorie
   - Lokal
