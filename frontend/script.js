@@ -7,9 +7,7 @@ const fetchPosts = async () => {
 
 	console.log('raw', rawPosts);
 
-	const jsonPosts = await rawPosts.json();
-
-	const parsedPosts = JSON.parse(jsonPosts);
+	const parsedPosts = await rawPosts.json();
 
 	return parsedPosts;
 };
