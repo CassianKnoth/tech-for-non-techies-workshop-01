@@ -4,12 +4,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koala yay</title>
-    <script defer src="./script.js"></script>
+    <title>Document</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    Koala is live on netlify!
+    <header>
+        <a class="logo"><img class="logo__img" src="./assets/logo.svg"></a>
+        <nav>
+            <ul class="main-menu">
+                <li class="main-menu__item"><a class="" href="#">Home</a></li>
+                <li class="main-menu__item"><a class="" href="#">Blog</a></li>
+                <li class="main-menu__item cta--secondary"><a class="" href="#">Log in</a></li>
+                <li class="main-menu__item cta--primary"><a class="" href="#">Create account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <figure class="stage">
+                <img class="stage-image" src="https://images.pexels.com/photos/2590768/pexels-photo-2590768.jpeg"></img>
+
+            </figure>
+        </section>
+        <section class="welcome-section">
+            <h1 class="welcome-section__headline">Welcome to Our Koala Haven</h1>
+            <p class="welcome-section__copy">
+                Discover the fascinating world of koalas! These iconic Australian marsupials are more than just sleepy
+                tree-dwellers—they have unique behaviors, specialized diets, and face growing conservation challenges.
+                Explore our site to learn about their habitat, vocalizations, and the efforts being made to protect
+                them. Whether you're a wildlife enthusiast or just curious about these adorable creatures, there's
+                plenty to uncover. Join us in celebrating and safeguarding koalas for future generations!
+            </p>
+        </section>
+        <section class="article-section">
+            <h2 class="article-section__headline">Check out our latest blog articles</h2>
+            <div class="article-section__teaser-grid">
+                <article class="teaser-card">
+                    <h3 class="teaser-card__headline">The Secret Life of Koalas: More Than Just Sleepy Bears</h3>
+                    <i class="teaser-card__length">5 min.</i>
+                    <div class="teaser-card__details">by <span>Bloggy McBlogger</span> | January 1 2025, 11:12</div>
+                </article>
+                <article class="teaser-card">
+                    <h3 class="teaser-card__headline">Koala Myths Debunked: Surprising Truths About Australia’s Iconic
+                        Marsupial</h3>
+                    <i>5 min.</i>
+                    <div>by <span>Bloggy McBlogger</span> | January 1 2025, 11:12</div>
+                </article>
+                <article class="teaser-card">
+                    <h3 class="teaser-card__headline">A Day in the Life of a Koala: From Sunrise to Sunset</h3>
+                    <i>5 min.</i>
+                    <div>by <span>Bloggy McBlogger</span> | January 1 2025, 11:12</div>
+                </article>
+                <article class="teaser-card">
+                    <h3 class="teaser-card__headline">The Battle for the Eucalyptus: How Habitat Loss Affects Koalas
+                    </h3>
+                    <i>5 min.</i>
+                    <div>by <span>Bloggy McBlogger</span> | January 1 2025, 11:12</div>
+                </article>
+                <article class="teaser-card">
+                    <h3 class="teaser-card__headline">Koalas and Climate Change: The Hidden Impact on Their Survival
+                    </h3>
+                    <i>5 min.</i>
+                    <div>by <span>Bloggy McBlogger</span> | January 1 2025, 11:12</div>
+                </article>
+            </div>
+        </section>
+        <section class="koala-section">
+            <div class="koala-section__image"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="imprint">
+            <h4 class="imprint__caption">Imprint</h4>
+            <address class="imprint__address">
+                Koala & Co</br>
+                Eucalyptus Street 42</br>
+                54321 Bush Town</br>
+                Australia</br>
+                <a href='#'>example@example.com</a></br>
+                0123 456 789 87
+            </address>
+        </div>
+        <div class="copyright">© 2025 koalacom. No rights reserved.</div>
+        <div class="footer-logo">
+            <a class="logo"><img src="./assets/logo_inverted.svg"></img></a>
+        </div>
+    </footer>
 </body>
 
 </html>

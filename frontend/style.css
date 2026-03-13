@@ -1,0 +1,252 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Mulish', sans-serif;
+	line-height: 2;
+	font-weight: bold;
+	color: var(--accent);
+}
+
+html {
+	font-size: 18px;
+}
+
+:root {
+	--accent: #293829;
+	--text-color-on-dark: #fff;
+
+	/* 
+  Should it be called space or size? space or spacing would be semantically favourable, due it being a 4px grid spacing system.
+  the system mainly talks about space, but due to size being more generic it would also fit more generic use cases, you could 
+  use it for font "size", space "size" like padding or margin, but also for the "size" of the border radius.
+
+  also space-12 vs space-sm? using numbers is more precise and due to the setup with grid-base it removes the speculation of
+  how high the value of px is. While using sm, md, lg is semantically more favourable.
+  */
+
+	--size-4: 4px;
+	--size-6: 6px;
+	--size-8: 8px;
+	--size-12: 12px;
+	--size-16: 16px;
+	--size-20: 20px;
+	--size-24: 24px;
+	--size-28: 28px;
+	--size-32: 32px;
+	--size-36: 36px;
+	--size-40: 40px;
+	--size-48: 48px;
+	--size-64: 64px;
+	--size-80: 80px;
+	--size-96: 96px;
+	--size-128: 128px;
+
+	--page-padding-mobile: 128px;
+	--page-padding-tablet: 128px;
+	--page-padding-desktop: 128px;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: var(--size-12) var(--size-128);
+}
+main {
+	padding: 0 var(--size-128);
+}
+
+.main-menu {
+	display: flex;
+	align-items: center;
+	gap: var(--size-16);
+}
+
+.main-menu__item {
+	list-style: none;
+}
+
+.main-menu__item a {
+	color: var(--accent);
+	text-decoration: none;
+}
+
+.cta--primary {
+	padding: var(--size-12) var(--size-24);
+	background: var(--accent);
+	border-radius: 6px;
+}
+
+.cta--primary a {
+	color: var(--text-color-on-dark);
+}
+
+.cta--secondary {
+	padding: var(--size-12) var(--size-24);
+	border: 1px var(--accent) solid;
+	border-radius: 6px;
+}
+
+section {
+	padding: var(--size-24) 0;
+}
+
+.stage {
+	width: 100%;
+}
+.stage-image {
+	width: 100%;
+	box-shadow: 25px 25px 0px 0px #dee9da;
+	border-radius: 6px;
+}
+
+.stage-caption {
+	position: absolute;
+	bottom: 25%;
+	right: -10%;
+	padding: var(--size-20) var(--size-40);
+	font-size: var(--size-128);
+	line-height: 1;
+	font-weight: bold;
+	background: white;
+	box-shadow: 10px 10px 0px 0px;
+	border-radius: 6px;
+}
+
+.welcome-section {
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-32);
+	padding: var(--size-48) 0;
+}
+
+.welcome-section__headline {
+	font-size: var(--size-64) px;
+}
+
+.welcome-section__copy {
+	font-size: var(--size-18) px;
+	line-height: var(--size-36) px;
+}
+
+.article-section {
+	padding: 24px 0;
+}
+
+.article-section__headline {
+	font-size: var(--size-36) px;
+	font-weight: 600;
+}
+.article-section__teaser-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--size-64) var(--size-40);
+	padding: var(--size-48) 0;
+}
+.teaser-card {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	row-gap: 40px;
+	padding: var(--size-32);
+	border: 1px solid #333;
+	box-shadow: 8px 8px 0px 0px #dee9da;
+	border-radius: 6px;
+}
+
+.teaser-card__headline {
+	font-size: var(--size-24) px;
+	width: 75%;
+}
+
+.teaser-card__length {
+	font-size: var(--size-16) px;
+}
+
+.teaser-card__details {
+	font-size: 18px;
+}
+
+.koala-section {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes POPART_EFFECT {
+	0%,
+	33% {
+		filter: drop-shadow(12px -12px 0 var(--accent));
+	}
+	34%,
+	66% {
+		filter: drop-shadow(12px -12px 0 #dee9da)
+			drop-shadow(16px -16px 0 var(--accent));
+	}
+	67%,
+	100% {
+		filter: drop-shadow(12px -12px 0 var(--accent))
+			drop-shadow(16px -16px 0 #dee9da) drop-shadow(20px -20px 0 var(--accent));
+	}
+}
+
+.koala-section__image {
+	background: url('./assets/koala-section.png');
+	background-size: cover;
+	width: 400px;
+	height: 400px;
+	filter: drop-shadow(12px -12px 0 var(--accent))
+		drop-shadow(16px -16px 0 #dee9da) drop-shadow(20px -20px 0 var(--accent));
+	animation: POPART_EFFECT 2s infinite;
+}
+
+.footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 48px var(--page-padding-desktop);
+	border-radius: var(--size-12) var(--size-12) 0 0;
+	background-color: var(--accent);
+}
+
+.footer * {
+	color: var(--text-color-on-dark);
+}
+
+.imprint {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: var(--size-20);
+}
+
+.imprint__caption {
+	font-weight: bold;
+	font-size: var(--size-24);
+}
+
+.imprint__address {
+	line-height: var(--size-36);
+	font-style: normal;
+}
+
+.imprint__address a {
+	color: white;
+}
+
+.copyright {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: center;
+}
+
+.footer-logo {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: flex-start;
+}
