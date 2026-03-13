@@ -67,11 +67,12 @@ Generell: Alles in diesem Repo auf Github mit simpler HTML-Seite, per Netlify de
     - Eine Software, die bestimmte Dateiformate versteht, mit denen man dann arbeiten kann
     - Word versteht z. B. .docx, zeigt die Dateien an und bietet passende Funktionalität
     - Im Web ist das Programm der Browser und die Dateien HTML, CSS und JS (das ist, was der Browser versteht)
+    - Eine Funktion ist z. B. Headlines zu markieren, Fließtext, Listen, etc. --> Wie geht sowas in HTML?
   - Einstieg mit HTML
     - Wie sieht das als Datei aus?
       - Elemente/Tags mit Attributen und Content, verschachtelbar
     - Wie ist das Resultat?
-      - unstlyed Seite im Browser
+      - unstyled Seite im Browser
 
 - ✋ Hands on!
   - Wir geben ein paar HTML-Snippets vor, die der gezeigten Seite zugeordnet werden sollen + Review + Erklärung
@@ -102,6 +103,18 @@ Generell: Alles in diesem Repo auf Github mit simpler HTML-Seite, per Netlify de
   - Der Browser versteht nur HTML, CSS und JS
   - Aktuell laden wir das lokal
   - Deployment heißt im Grunde, diese Dateien offen erreichbar für andere bereitzustellen
+    - Hosting und Deployment kann man sich vorstellen wie eine Party
+      - Location
+        - On-premise: Mir gehört der Raum, in dem die Party stattfindet
+        - Gemietet: Ich miete eine Event-Location
+      - Ausstattung
+        - Ich brauche Möbel, Lichter, Musik, Essen, Getränke, etc.
+        - --> Meine Dateien und Ressourcen
+      - Die Gäste sind meine Besucher, der URL die Adresse
+      - Deployment ist der Aufbau
+        - Möbel müssen geliefert und aufgebaut werden, etc.
+      - Updates
+        - Vielleicht ändert sich das Wetter, jetzt brauchen wir Pavillons im Außenbereich oder müssen den schließen --> Updates und Features, Bugfixes etc.
     - Client-Server Modell
     - Wir haben das aktuell ganz einfach gemacht --> Unsere Dateien liegen bei Github und lassen sich über Netlify hosten
   - URL/Domain erklären
@@ -175,6 +188,8 @@ Generell: Alles in diesem Repo auf Github mit simpler HTML-Seite, per Netlify de
           - Funktioniert alles lokal?
           - Sind die Änderungen sinnvoll und bugfrei? Lässt sich ggf. etwas optimieren?
         - Am Ende braucht es das Approval des reviewnden Teammitglieds, damit der Merge gestattet wird
+
+### CMS und JavaScript
 
 - Blog
   - es gibt eine post.html Seite, die einen URL-Parameter für den Blog-Artikel Index besitzt
